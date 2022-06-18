@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  name: dapr-dashboard
+  annotations:
+    nginx.ingress.kubernetes.io/auth-realm: Authentication Required
+    nginx.ingress.kubernetes.io/auth-secret: dapr/basic-auth
+    nginx.ingress.kubernetes.io/auth-type: basic
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: dapr.h8r.site
+      http:
+        paths:
+          - backend:
+              service:
+                name: dapr-dashboard
+                port:
+                  number: 8080
+            path: /
+            pathType: ImplementationSpecific
+status:
+  loadBalancer: {}

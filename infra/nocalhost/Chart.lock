@@ -1,0 +1,6 @@
+dependencies:
+- name: mariadb
+  repository: https://nocalhost-helm.pkg.coding.net/nocalhost/helm
+  version: 9.0.1
+digest: sha256:b35d5455da0c5da6ced8b718c1b95ec9c1204f09d8dc6e709e6c83cab3fcb5c8
+generated: "2022-05-16T17:10:54.286579+08:00"

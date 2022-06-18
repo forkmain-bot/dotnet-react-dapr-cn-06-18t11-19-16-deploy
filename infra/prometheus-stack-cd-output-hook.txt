@@ -1,0 +1,1 @@
+{"url": "http://grafana.h8r.site", "username": "admin", "password": "prom-operator","infra": true, "type": "monitoring", "annotations": "W10K", "prompt":"prometheus URL: http://prometheus.h8r.site [Username: admin Password: heighliner123!], alertManager URL: http://alert.h8r.site [Username: admin Password: heighliner123!]"}
